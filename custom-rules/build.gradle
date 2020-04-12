@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+
+    compileOnly "io.gitlab.arturbosch.detekt:detekt-api:$detektVersion"
+    implementation "io.gitlab.arturbosch.detekt:detekt-cli:$detektVersion"
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

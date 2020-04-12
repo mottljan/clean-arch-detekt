@@ -1,2 +1,3 @@
 rootProject.name='Clean arch detekt'
 include ':app'
+include ':custom-rules'
