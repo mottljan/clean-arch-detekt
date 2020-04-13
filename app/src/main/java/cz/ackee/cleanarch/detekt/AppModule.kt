@@ -1,7 +1,7 @@
 package cz.ackee.cleanarch.detekt
 
 import androidx.room.Room
-import cz.ackee.cleanarch.detekt.features.AppDatabase
+import cz.ackee.cleanarch.detekt.features.core.data.db.AppDatabase
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 

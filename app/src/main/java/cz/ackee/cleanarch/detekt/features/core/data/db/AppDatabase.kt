@@ -1,4 +1,4 @@
-package cz.ackee.cleanarch.detekt.features
+package cz.ackee.cleanarch.detekt.features.core.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

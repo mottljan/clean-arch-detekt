@@ -31,8 +31,8 @@ allprojects {
     apply plugin: 'io.gitlab.arturbosch.detekt'
 
     detekt {
-        ignoreFailures = true
         config = files("$rootDir/default-detekt-config.yml")
+        ignoreFailures = true
     }
 
     dependencies {
