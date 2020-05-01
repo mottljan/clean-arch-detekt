@@ -15,7 +15,7 @@ class DatabaseImplLeakRule(config: Config = Config.empty) : Rule(config) {
 
         const val DATABASE_LIBRARY_PACKAGE_PATH = "androidx.room"
 
-        const val DATABASE_LAYER_PACKAGE = "db"
+        const val DATABASE_LAYER_PACKAGE = "room"
 
         const val KOIN_MODULE_PACKAGE_PATH = "org.koin.dsl.module"
     }
@@ -25,7 +25,7 @@ class DatabaseImplLeakRule(config: Config = Config.empty) : Rule(config) {
 
     override val issue = Issue(
         id = "DatabaseImplLeak",
-        description = "Database implementation leaks outside of the 'db' package. This violates dependency rule.",
+        description = "Database implementation leaks outside of the '$DATABASE_LAYER_PACKAGE' package. This violates dependency rule.",
         severity = Severity.CodeSmell,
         debt = Debt.FIVE_MINS
     )

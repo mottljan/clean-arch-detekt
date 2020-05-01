@@ -1,6 +1,6 @@
 package cz.ackee.cleanarch.detekt.features.articles.di
 
-import cz.ackee.cleanarch.detekt.features.core.data.db.AppDatabase
+import cz.ackee.cleanarch.detekt.features.core.data.room.AppDatabase
 import cz.ackee.cleanarch.detekt.features.articles.data.ArticlesDatabaseSource
 import cz.ackee.cleanarch.detekt.features.articles.data.ArticlesRepositoryImpl
 import cz.ackee.cleanarch.detekt.features.articles.data.room.ArticlesRoomDataSource
