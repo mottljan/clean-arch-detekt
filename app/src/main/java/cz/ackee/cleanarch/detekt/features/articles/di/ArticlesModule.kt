@@ -3,7 +3,7 @@ package cz.ackee.cleanarch.detekt.features.articles.di
 import cz.ackee.cleanarch.detekt.features.core.data.db.AppDatabase
 import cz.ackee.cleanarch.detekt.features.articles.data.ArticlesDatabaseSource
 import cz.ackee.cleanarch.detekt.features.articles.data.ArticlesRepositoryImpl
-import cz.ackee.cleanarch.detekt.features.articles.data.db.ArticlesRoomDataSource
+import cz.ackee.cleanarch.detekt.features.articles.data.room.ArticlesRoomDataSource
 import cz.ackee.cleanarch.detekt.features.articles.domain.ArticlesRepository
 import cz.ackee.cleanarch.detekt.features.articles.domain.DeleteArticleUseCase
 import cz.ackee.cleanarch.detekt.features.articles.domain.DeleteArticleUseCaseImpl

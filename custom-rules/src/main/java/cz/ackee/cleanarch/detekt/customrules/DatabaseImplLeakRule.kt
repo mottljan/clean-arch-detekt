@@ -31,14 +31,13 @@ class DatabaseImplLeakRule(config: Config = Config.empty) : Rule(config) {
     )
 
     override fun visitImportDirective(importDirective: KtImportDirective) {
-        val import = importDirective.import
         if (shouldReport(importDirective)) {
             report(
                 CodeSmell(
-                issue = issue,
-                entity = Entity.from(importDirective),
-                message = "Importing '$import' which is part of the database implementation."
-            )
+                    issue = issue,
+                    entity = Entity.from(importDirective),
+                    message = "Importing '${importDirective.import}' which is part of the database implementation."
+                )
             )
         }
     }

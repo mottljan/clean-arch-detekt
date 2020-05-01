@@ -1,4 +1,4 @@
-package cz.ackee.cleanarch.detekt.features.articles.data.db
+package cz.ackee.cleanarch.detekt.features.articles.data.room
 
 import androidx.room.Dao
 import androidx.room.Delete
